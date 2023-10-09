@@ -39,8 +39,8 @@ function execute(bigCount, smallCount, goal){
 
 console.log("\nNegative Numbers:\n");
 execute(2, -1, 9); // false
-execute(-2, 0, 9); // false
-execute(2, 0, -9); // false
+execute(-2, 9, 9); // false
+execute(2, 9, -9); // false
 
 console.log("\nSum less than goal:\n");
 execute(1, 0, 9); // false
@@ -48,3 +48,8 @@ execute(1, 0, 9); // false
 console.log("\nProvided Test Cases:\n");
 execute(2, 0, 9); // false
 execute(1, 5, 9); // true
+
+console.log("\nAdditional Test Cases:\n");
+execute(4 , 18 ,19); // true
+execute(0, 5, 4); // true
+execute(2, 1, 5); // true
